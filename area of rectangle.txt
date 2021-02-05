@@ -1,0 +1,17 @@
+// program for area of recatngle war and wret
+#include<conio.h>
+#include<stdio.h>
+#include<iostream.h>
+int rectangle(int l,int b);
+int main()
+{
+clrscr();
+rectangle(11,22);
+getch();
+}
+int rectangle(int l,int b)
+{
+ int A=l*b;
+ cout<<"Area of rectangle is:" <<A<<endl;
+ return(A);
+} 
