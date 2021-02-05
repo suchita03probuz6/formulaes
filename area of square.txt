@@ -1,0 +1,17 @@
+// program for area of square warg and wret
+#include<stdio.h>
+#include<conio.h>
+#include<iostream.h>
+int asqrt(int a);
+int main()
+{
+clrscr();
+asqrt(10);
+getch();
+}
+int asqrt(float a)
+{
+float A=a*a;
+cout<<"Area of square is: "<<A<<endl;
+return(A);
+}
