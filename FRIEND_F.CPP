@@ -1,0 +1,31 @@
+#include <iostream> 
+#include<conio.h>
+#include<stdio.h>
+class A { 
+private: 
+    int a; 
+  
+public: 
+    A() { a = 0; } 
+    friend class B; 
+}; 
+  
+class B { 
+private: 
+    int b; 
+  
+public: 
+    void showA(A& x) 
+    { 
+        
+        std::cout << "A::a=" << x.a; 
+    } 
+}; 
+  
+int main() 
+{ 
+    A a; 
+    B b; 
+    b.showA(a); 
+    return 0; 
+} 
