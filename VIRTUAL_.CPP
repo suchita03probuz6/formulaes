@@ -10,14 +10,14 @@ class one
    };
 class two :public one
 {
-	public:
+     /*	public:
       void disp()
 	{
 
 	cout<<"two" ;
 	}
 	};
-
+		   */
 	void main()
 	{
 	clrscr();
