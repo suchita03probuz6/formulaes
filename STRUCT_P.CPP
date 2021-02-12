@@ -4,17 +4,19 @@
 class one
 {
 	public :
-	void disp()
+    virtual	void disp()
 	{
 		cout<<"one";
 		}
 		};
-		class two :public one
+	      class two : public one
 		{
 		void disp()
 		{
+
 		cout<<"two";  }
 		};
+
 	void main()
 	{
 		clrscr();
@@ -22,8 +24,8 @@ class one
 		one ob,*obpt;
 		obpt=&ob;
 		obpt->disp();
-		two ob1;
-		obpt=&ob1;
-		obpt->disp();
+	      two ob1;
+	       obpt=&ob1;
+	       obpt->disp();
 		getch();
 		}
