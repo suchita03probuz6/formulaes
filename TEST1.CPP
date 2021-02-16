@@ -1,30 +1,31 @@
 #include<stdio.h>
 #include<conio.h>
 #include<iostream.h>
-void main()
-{	clrscr();
-	int i,j;
-	char z;
-	for(i=1;i<=2;i++)
+class test1
+{
+	public :
+	char a1[6] ={ 'A','b','c','D','e'};
+	int a2[5]={1,2,3,4,5};
+	void fun()
 	{
-		char c1='A';
-		cout<<c1;
-		for(j=1;j<=1;j++)
+	for(int i=0;i<=4;i++)
+	{
+		cout<<a1[i];
+		}
+		cout<<endl;
+		for(int j=0;j<=4;j++)
 		{
-			char c2='b';
-			cout<<c2;
-			c2=c2+1;
-			cout<<c2;
-		       char c3=c1+3;
-			cout<<c3;
-			char c4=c2+2;
-			cout<<c4;
-			cout<<"\n";
-			for(int k=1;k<=5;k++)
-			{
-				cout<<k;
-				}
-
-	}  cout<<"\n";}
-	getch();
-}
+			cout<<a2[j];
+			}
+			cout<<endl;
+		}
+		cout<<endl;
+		}
+		};
+		int main()
+		{
+		test d1,d2;
+		d1.fun();
+		d2.fun();
+		getch();
+		}
